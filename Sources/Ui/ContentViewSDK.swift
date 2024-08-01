@@ -17,6 +17,7 @@ public struct ContentViewSDK: View {
     public var body: some View {
         TextEditor(text: $inputValue)
             .foregroundColor(.blue)
+            .keyboardType(.numberPad)
             .padding(EdgeInsets(top: 0, leading: 12, bottom: 8, trailing: 12))
             .frame(height: 150)
             .cornerRadius(2)
