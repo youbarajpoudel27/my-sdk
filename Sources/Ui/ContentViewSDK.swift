@@ -10,6 +10,10 @@ import SwiftUI
 public struct ContentViewSDK: View {
     @State var inputValue: String
 
+    public init(inputValue: String) {
+        self.inputValue = inputValue
+    }
+
     public var body: some View {
         TextEditor(text: $inputValue)
             .foregroundColor(.blue)
